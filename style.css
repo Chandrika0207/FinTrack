@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd; /* Light blue background */
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #1976d2; /* Blue header */
+    padding: 20px;
+    color: white;
+    font-size: 2.5rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Grid Setup */
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  /* Entity Box */
+  .entity-box {
+    background-color: #90caf9; /* Light blue box */
+    width: 100%;
+    max-width: 70%;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .entity-box:hover {
+    background-color: #64b5f6; /* Lighter blue when hovered */
+    transform: scale(1.05);
+  }
+  
+  /* Entity Title */
+  .entity-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d47a1; /* Dark blue */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Form Section */
+  .form-section {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section h3 {
+    font-size: 1.4rem;
+    color: #1976d2; /* Blue */
+    margin-bottom: 15px;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #64b5f6;
+    font-size: 1rem;
+  }
+  
+  form button {
+    padding: 12px 18px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #1565c0; /* Darker blue on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .entity-box {
+      width: 90%;
+    }
+  }
+  
